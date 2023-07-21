@@ -1,6 +1,6 @@
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 
 
@@ -74,41 +74,69 @@ nav {
 
 
   .flexbox {
-display:flex;
-justify-content: center;
-width: 100%; 
-margin-right: auto;
-margin-left: auto;
-margin-top: 5em;
-margin-bottom: 7em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
 
-  .box1 {
   
-    display: inline-flex;
-    background-image: url(../images/box.png);
-    margin:2.5em;
-    width: 20em;
-    height: 30em;
-     ;
     
-  }
-
-  .box {
   
-    display: inline-flex;
+
+  .Kunstbox {
+  
+   
     background-color: lightslategray;
-    margin:2.5em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
     width: 20em;
     height: 30em;
   }
+
+  .Fassadenbox {
+  
+   
+    background-color: lightslategray;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 30em;
+  }
+
+  .Shopbox {
+  
+   
+    text-align: center;
+    font-family: 'Quicksand', sans-serif; 
+    color: rgb(255, 255, 255);
+    padding-top: 10em;  
     
 
+    background-color: lightslategray;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 20em; 
+  }
+
+  <!auchtung>
  
-  -----------------
+  <!----------------- inaktiv °°°°°
 
-
+.wrapper {
+  margin-bottom: 4em;
+  
+}
 
 
   .about-me::after {
@@ -123,6 +151,7 @@ margin-bottom: 7em;
     float: left;
     margin-right: 5em;
     margin-left: 10em;
+    margin-top: 4em;
   }
 
   .about-me p {
@@ -130,11 +159,60 @@ margin-bottom: 7em;
     line-height: 1.5;
     margin-right: 10em;
   }
+
+
   
   h1 {
+    text-align: center;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif; 
     color: black;
+  }
+
+  h2 {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif; 
+    color: black;
+  }
+
+  .zitat {
+   text-align: center;
+   margin-top: 10em;
+  }
+
+
+
+  .insp{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-gap: 1rem;
+
+   
+  }
+  
+  .divgiftxt{
+    grid-column: span 3;
+
+ 
+
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif; 
+    color: black;
+    
+  }
+  
+  .divgif{
+    grid-column: span 3;
+
+    margin: auto;
+  }
+
+  .giftxt{
+    margin-left: 10em;
+  }
+
+  .gif{
+    width: 20em;
   }
 
 
@@ -160,17 +238,13 @@ margin-bottom: 7em;
     padding: 10px;
   }
 
+  
+
   h3 {
     margin-top: 0;
   }
 
-  p {
-  
-      text-decoration: none;
-      font-family: 'Quicksand', sans-serif; 
-      color: black;
-    
-  }
+
 
   /* CSS code for social media icons */
   .social-media-icons {
@@ -223,6 +297,9 @@ margin-bottom: 7em;
 .tile:nth-child(5){
   grid-column: span 3;
 }
+
+
+
 @media screen and (max-width: 650px){
   .container{
       display: block;
@@ -231,3 +308,70 @@ margin-bottom: 7em;
       margin-bottom: 1rem;
   }
 }
+
+
+@media screen and (max-width: 679px){
+  .flexbox{
+      display: block;
+  }
+  
+  
+    .Kunstbox{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .Fassadenbox{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .Shopbox{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+
+
+  @media (min-width: 680px) and (max-width: 1200px) {
+
+    .flexbox{
+    display: grid;
+      align-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.1rem;
+     
+  }
+  
+  
+    .Kunstbox{
+      
+      margin-left: auto;
+      margin-right: auto;
+      width: 12em;
+      height: 15em;
+    }
+    .Fassadenbox{
+      
+      margin-left: auto;
+      margin-right: auto;
+      width: 12em;
+      height: 15em;
+    }
+
+    .Shopbox{
+      
+      margin-left: auto;
+      margin-right: auto;
+      width: 12em;
+      height: 10em;  <!achtung>
+    }
+
+   
+
+  }
