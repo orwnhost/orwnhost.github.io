@@ -33,42 +33,84 @@
 
     <img src="images/Catchframe.png" class="topimg" />
 
+   
+
+<div class="titletxt">
+    <h1>Oscar Wilfan</h1>
+  </div>
+    <div class="insp">
+      <div class="divgif">
+        <img  class="gif" src="images/profile.jpg" >
+        <br><br>
+       
+      
+        </div>
+        <div class="divgiftxt">
+  <p class="giftxt"> 
+    Nach dem Kindergarten habe ich nicht aufgehört zu zeichnen,<br> diese Leidenschaft formte mich zu dem Künstler, der ich heute bin.<br> Schon immer war mir klar, dass ich meinen eigenen Weg gehen und<br> von meiner Kunst leben möchte.<br> Es mag nicht einfach sein, doch gerade die Herausforderung macht es spannend und erfüllend.<br> Nach meiner Schulzeit machte ich mich Selbstständig und arbeite nun mit Eifer an meiner ersten Ausstellung.<br> In meinen Werken reflektiere ich Themen, die mich zutiefst beschäftigen. Meine Kunst soll mehr sein als nur ästhetisch ansprechend; sie soll Betrachter dazu anregen, über das Leben, die Gesellschaft und die Menschlichkeit nachzudenken.<br> Denn für mich ist Kunst nicht nur Ausdruck meiner innersten Gefühle, sondern auch ein Medium, um zu kommunizieren und unsichtbares sichtbar zu machen. Ich verfolge die Vision, mit meiner Kunst einen positiven Einfluss auf die Welt zu nehmen und vielleicht sogar das Bewusstsein für wichtige Themen zu schärfen.<br> Dazu ist es mir ein Anliegen, eine tiefe emotionale Resonanz bei meinen Betrachtern zu erzeugen.<br><br> Wenn dich das ansprich, lade ich dich herzlich ein, Teil meiner Reise zu sein. Melde dich für meinen Newsletter an und sei unter den Ersten, die erfahren, wann meine erste Ausstellung stattfinden wird. Gemeinsam können wir die Welt bereichern und einen kreativen Dialog entfachen.
+  </p>
+        </div>
+       
+    </div>
+
+    <div class="container">
+      <a class="donate-button" href=" https://www.paypal.com/donate/?hosted_button_id=PJKGN83G8TU7J" target="_blank">Paypal Donate</a>
+      <a class="contact-button" href="mailto:kontakt.orwn@gmail.com">kontakt.orwn@gmail.com</a>
+        
+    </div>
+
+    <form action="https://script.google.com/macros/s/AKfycbzXdrzK5iuCdpeMxKT_h9gD2LUIuiBH2rZr-OjQ4oRH-brLB5EuK0mJHtU0Kn7GPUKFVA/exec" target="_blank"s method="POST">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <input type="submit" value="Subscribe">
+    </form>
+
+    <form name="submit-to-google-sheet">
+      <input name="email" type="email" placeholder="Email" required>
+      <button type="submit">Send</button>
+    </form>
+
+
+<form name="submit-to-google-sheet">
+  <input type="email" name="email" placeholder="email@example.com" required>
+  <button type="submit">send</button>
+</form>
+<span>Thank you!</span>
+
     <div class="flexbox">
       <div class="Kunstbox"></div>
       <div class="Fassadenbox"></div>
       <div class="Shopbox">Shop</div>
     </div>
 
-
-    <h1>Oscar Wilfan</h1>
-
-    <div class="insp">
-        <div class="divgiftxt">
-  <p class="giftxt"> Fern ab von Akademie und Establishment baut dieser junge Mann ein
-    Kunstimperium auf. Er ist Stubenrein und hat noch alle Zähne, wenn sie
-    ihn sehen rufen sie mich bitte an!</p>
-        </div>
-        <div class="divgif">
-        <img  class="gif" src="images/profile.jpg" >
-        </div>
-    </div>
-
 <div class="zitat">
-    <h2>"Wilfan wurde am 22.02.2023 dem Amtsarzt vorgeführt, welcher eine</h2> 
-      <h2>Beinträchtigung durch Drogen, Krankheit und Übermüdung feststellte"</h2>
+  <div></div>
+  <div></div>
+  <div class="zitbx">
+    <img src="images/zit1.png" class="zit" />
+  </div>
+  <div class="zitxt">
+    <h2>"Wilfan wurde am 22.02.2023 um 22:22 dem Amtsarzt vorgeführt,</h2> 
+      <h2> welcher eine Beinträchtigung durch Drogen, Krankheit und Übermüdung feststellte"</h2>
       <h2>~Pk Josefstadt</h2>
+    </div>
+    <div class="zitbx">
+      <img src="images/zit2.png" class="zit" />
+    </div>
     </div>
     
     </h2>
  <!------------------------------------------------------------------------------------------>
     <footer>
+      <a href="index.html">
+        <img src="images/orwn.png" class="orwn2" />
+      </a>
       <table>
         <tr>
           <td>
             <a href="umut.html">Impressum</a> <br> <br>
             <a href="holder.html">Datenschutz</a> <br> <br>
             <a href="place.html">AGB</a> <br> <br>
-            <a href="placeholder.html">...</a> <br> <br>
+            <a href="placeholder.html">Kontakt</a> <br> <br>
           </td>
           <td>
             <a href="Kunst.html">Kunst</a> <br> <br>
@@ -91,6 +133,18 @@
           </td>
         </tr>
       </table>
+ 
     </footer>
+   <script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbw8b8vvhSRjY6kZXOY58-hGk31d8bA3QaCQ14ZVTS2VgqUKyyXkIdhipiy3F2dEua96yA/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
