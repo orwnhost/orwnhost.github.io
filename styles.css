@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 
-
+.orwn:hover{
+  opacity: 65%;
+}
 .orwn {
   display:block;
   margin-top: 2em;
@@ -11,6 +13,31 @@
   margin-left: auto;
   margin-right: auto;
   width: 8em;
+  
+}
+
+.logotop{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.socials{
+  
+  text-align: right;
+}
+
+.socials img:hover{
+  opacity: 65%;
+}
+
+.socials img{
+ 
+  width: 40px;
+  height: 40px;
+  padding-right: 2em;
+  padding-top: 2.5em;
+
 }
 
 
@@ -49,7 +76,6 @@ nav {
     top: 0;
   }
 
-  /* CSS code for the navigation bar and links */
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -78,6 +104,28 @@ nav {
     width: 100%;
   }
 
+  .parallax {
+border-radius: 0%;
+    width: 100%;
+    height: 40em;
+    margin-left: auto;
+    margin-right:auto;
+
+    /* The image used */
+    background-image: url("images/Catchframe.png");
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
 
   .titletxt {
     margin-top: 3em;
@@ -89,6 +137,13 @@ margin-bottom: 3em;
     line-height:1.5;
   }
 
+  /* -----------------------------------       HEAD       ----------------------------------- */
+
+
+
+    /* -----------------------------------       3 B O X E N       ----------------------------------- */
+
+
   .flexbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,44 +153,23 @@ margin-bottom: 3em;
   }
 
 
+  h6 {
+
+    text-align:center;
+  }
+
+
   
     
   
 
   .Kunstbox {
-  
-   
-    background-color: lightslategray;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2.5em;
-    margin-bottom: 3em;
-    width: 20em;
-    height: 30em;
-  }
+    background-image:url("./images/menu1.png");
+    background-repeat: no-repeat;
 
-  .Fassadenbox {
-  
-   
-    background-color: lightslategray;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 2.5em;
-    margin-bottom: 3em;
-    width: 20em;
-    height: 30em;
-  }
-
-  .Shopbox {
-  
-   
-    text-align: center;
-    font-family: 'Quicksand', sans-serif; 
-    color: rgb(255, 255, 255);
-    padding-top: 10em;  
     
-
-    background-color: lightslategray;
+    padding-top: 10em; 
+    background-color: rgb(0, 0, 0);
     font-weight: bold;
     margin-right: auto;
     margin-left: auto;
@@ -145,9 +179,59 @@ margin-bottom: 3em;
     height: 20em; 
   }
 
-  <!auchtung>
+  .Kunstbox:hover {
+    opacity: 80%;
+  }
+
  
-  <!----------------- inaktiv °°°°°
+
+  .Fassadenbox {
+    background-image:url("./images/menu2.png");
+    background-repeat: no-repeat;
+   
+    padding-top: 10em;  
+   
+ 
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 20em; 
+  }
+
+  .Fassadenbox:hover {
+    opacity: 80%;
+  }
+
+  .Shopbox {
+  
+    background-image:url("./images/menu3.png");
+    background-repeat: no-repeat;
+   
+    padding-top: 10em;  
+    
+
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 20em; 
+  }
+
+  .Shopbox:hover {
+    opacity: 80%;
+  }
+
+
+    /* -----------------------------------              ----------------------------------- */
+
+
 
 .wrapper {
   margin-bottom: 4em;
@@ -192,12 +276,14 @@ margin-bottom: 3em;
     font-size: 13px;
   }
 
-  h3{
+  .divgif h3 {
     text-align: left;
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif; 
-    color: black;
+
   }
+
+    /* -----------------------------------       Z I T A T       ----------------------------------- */
+
+ 
 
   .zitat {
     width:fit-content;
@@ -216,6 +302,9 @@ margin-bottom: 3em;
   .zit {
     width: 5em;
   }
+
+    /* -----------------------------------       F A S S A D E N HTML       ----------------------------------- */
+
 
 
 
@@ -262,6 +351,11 @@ text-align: right;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3em;
+
+
+  
+
+
   }
 
   .giftxt{
@@ -271,11 +365,104 @@ text-align: right;
 
   .gif{
     width: 20em;
+
+  
   }
+
+/* ----------------------------------- P A R A L A X ----------------------------------- */
+
+ 
+  
+  .page {
+    width:80vw;
+    margin-left: auto;
+    margin-right: auto;
+    height:100vh;
+    perspective:1px;
+    perspective-origin: center center;
+    overflow-x:hidden;
+  }
+  .overflow {
+    position:absolute;
+    width:100vw;
+    height:80vh;
+    top:120vh;
+    background-color:#FFF;
+  }
+  #parallax {
+    transform-style: preserve-3d;
+    height:120vh;
+  }
+  
+  .keyart_layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: absolute;
+    top:160px;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  
+  #keyart-0 {
+    background-image: url('/images/paralax1.png');
+    background-size: 80vw;
+    background-color: #ffaf1b;
+    transform:translate3d(-11px,-46px,-1.3px) scale(2.3);
+  }
+  #keyart-1 {
+    background-image: url('/images/paralax2.png');
+    background-size: 80vw;
+
+    transform:translate3d(0,-47px,-.7px) scale(1.7);
+  }
+  #keyart-2 {
+    background-image: url('/images/paralax3.png');
+    background-size: 80vw;
+
+    transform:translate3d(0,-98px,-.4px) scale(1.6);
+  }
+  
+
+  
+
+/* -----------------------------------CSS Kunst Html ----------------------------------- */
+
+
 
   .container {
     margin-top: 2em;
-    text-align: center;
+  }
+
+  .tile1 {
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;  }
+
+
+
+    .door img {
+      width: 800px%; 
+    }
+
+    .tile h3 {
+      text-align: center;
+    }
+  
+    h3{
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif; 
+      color: black;
+    }
+
+
+      /* -----------------------------------       B U T T O N S       ----------------------------------- */
+
+
+  .contact-button:hover{
+    opacity: 75%;
   }
 
   .contact-button {
@@ -304,6 +491,9 @@ text-align: right;
  
   }
 
+  .donate-button:hover{
+    opacity: 75%;
+  }
 
   .donate-button {
     font-weight: bold;
@@ -348,13 +538,18 @@ text-align: right;
     display: block;
   }
 
+
+
+  /* -----------------------------------       F O O T E R       ----------------------------------- */
+
+
   footer {
     background-color: #ffffff;
     margin-top: 7em;
     
   }
 
-  /* CSS code for the table in the footer */
+
   table {
     margin-left: auto;
     margin-right: auto;
@@ -363,7 +558,6 @@ text-align: right;
     background-color: rgb(255, 255, 255);
   }
 
-  /* CSS code for the table sections */
   td {
     vertical-align: top;
     padding: 10px;
@@ -377,7 +571,6 @@ text-align: right;
 
 
 
-  /* CSS code for social media icons */
   .social-media-icons {
     float: right;
   }
@@ -387,6 +580,10 @@ text-align: right;
     display: inline-block;
     
     margin-top: 1.5em;
+  }
+
+  .social-media-icons img:hover{
+    opacity: 65%;
   }
 
   .social-media-icons img {
@@ -405,7 +602,7 @@ text-align: right;
     width: 8em;
   }
   
-
+  /* --------------- /////////////////////////////      H  A  N  D  Y    /////////////////////////  -------------------------- */
 
 
 
@@ -484,11 +681,21 @@ margin-top: 0;
 
 .container {
   text-align: center;
+  
+}
+
+.tile img {
+  width: 500px;
+}
+
+.tile {
+
 }
     
     
   }
 
+  /* --------------- /////////////////////////////      T A B L E T     /////////////////////////  -------------------------- */
 
   @media (min-width: 680px) and (max-width: 1200px) {
 
@@ -503,20 +710,28 @@ margin-top: 0;
      
   }
   
+
+  .container {
+    text-align: center;
+  }
+
+  .tile img {
+    width: 700px;
+  }
   
     .Kunstbox{
       
       margin-left: auto;
       margin-right: auto;
       width: 12em;
-      height: 15em;
+      height: 10em;
     }
     .Fassadenbox{
       
       margin-left: auto;
       margin-right: auto;
       width: 12em;
-      height: 15em;
+      height: 10em;
     }
 
     .Shopbox{
@@ -524,7 +739,7 @@ margin-top: 0;
       margin-left: auto;
       margin-right: auto;
       width: 12em;
-      height: 10em;  <!achtung>
+      height: 10em;  
     }
 
     .insp{
