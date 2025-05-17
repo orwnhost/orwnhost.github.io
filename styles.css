@@ -833,7 +833,11 @@ margin-top: 0;
   nav ul li {
     margin: 0.5rem 0;
   }
-}
-   
 
-  }
+  .orwn {
+  max-height: 80px;
+}
+
+}
+
+   

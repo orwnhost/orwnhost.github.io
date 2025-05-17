@@ -4,6 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>orwn</title>
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="icon" type="image/" href="/images/favicon.png" />
     <meta name="keywords" content="art, kunst, orwn, oscar, wilfan, wien, vienna, artist, künstler" />
     <meta
@@ -13,115 +17,106 @@
     <link rel="stylesheet" href="styles.css" />
   
  
-  <body>
+ <body>
+  <div class="container text-center my-4">
     <a href="index.html">
-      <img src="images/orwn.png" class="orwn" />
+      <img src="images/orwn.png" class="img-fluid orwn" />
     </a>
-
-    <nav>
-      <ul>
-        <li><a href="Kunst.html">Kunst</a></li>
-        <li><a href="Fassaden.html">Fassaden</a></li>
-
-        <li><a href="About.html">About</a></li>
-        <li class="shop"><a class="shop" href="Shop.html">Shop</a></li>
-      </ul>
-    </nav>
-
-  </head>
-   <!------------------------------------------------------------------------------------------>
-  
-   <h1>Bunte Fassaden</h1>
-
-
-<section class="fassade-section">
-  <div class="fassade-text">
-    <p class="giftxt_F">
-      Ihr Gebäude als Kunstwerk – Ein Blickfang mit Botschaft.<br><br>
-      Individuelle Wandgestaltung für Unternehmen, die auffallen wollen.<br><br>
-      Ob Fassade, Innenraum oder Eingangsbereich – Kunst am Bau schafft Atmosphäre, bleibt im Gedächtnis und vermittelt Werte.<br><br>
-
-      <strong>Vorteile für Ihr Unternehmen:</strong><br>
-      – Stärkt Ihre Markenidentität<br>
-      – Hinterlässt einen sympathischen, kreativen Eindruck<br>
-      – Macht aus Ihrer Immobilie ein Aushängeschild<br>
-      – Verbindet Ästhetik mit Funktionalität<br><br>
-
-      🎨 Jetzt kostenlose Konzeptphase anfragen – unverbindlich & kreativ.<br>
-      Lassen Sie uns gemeinsam Ihre Vision sichtbar machen.
-    </p>
   </div>
-  <div class="fassade-image">
-    <img class="gif" src="images/fassaden.gif" alt="Fassaden-GIF">
+
+  <nav class="container">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="Kunst.html">Kunst</a></li>
+      <li class="nav-item"><a class="nav-link" href="Fassaden.html">Fassaden</a></li>
+      <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+      <li class="nav-item"><a class="nav-link text-danger" href="Shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <div class="container text-center my-5">
+    <h1>Bunte Fassaden</h1>
   </div>
-</section>
 
-
-    
-
-   
-
-<section style="background-color: #000; color: white; text-align: center; padding: 1rem;">
-  <h1>Seitentitel</h1>
-</section>
-
-
-
-<div style="text-align: center; margin: 1rem 0;">
-  <a class="contact-button_f" style="padding: 0.5rem 1rem;"href="mailto:kontakt.orwn@gmail.com">kontakt.orwn@gmail.com</a>
-
-
-</div>
-
-<section style="display: flex; justify-content: space-between; padding: 2rem;">
-  <div style="flex: 1; padding: 0 0.5rem;">
-    <img src="images/bild2.png" alt="Bild 1" style="width: 100%; height: auto;">
+  <!-- Text & GIF -->
+  <div class="container my-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="text-start">
+          Ihr Gebäude als Kunstwerk – Ein Blickfang mit Botschaft.<br><br>
+          Individuelle Wandgestaltung für Unternehmen, die auffallen wollen.<br><br>
+          Ob Fassade, Innenraum oder Eingangsbereich – Kunst am Bau schafft Atmosphäre, bleibt im Gedächtnis und vermittelt Werte.<br><br>
+          <strong>Vorteile für Ihr Unternehmen:</strong><br>
+          – Stärkt Ihre Markenidentität<br>
+          – Hinterlässt einen sympathischen, kreativen Eindruck<br>
+          – Macht aus Ihrer Immobilie ein Aushängeschild<br>
+          – Verbindet Ästhetik mit Funktionalität<br><br>
+          🎨 Jetzt kostenlose Konzeptphase anfragen – unverbindlich & kreativ.<br>
+          Lassen Sie uns gemeinsam Ihre Vision sichtbar machen.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/fassaden.gif" alt="Fassaden-GIF" class="img-fluid">
+      </div>
+    </div>
   </div>
-  <div style="flex: 1; padding: 0 0.5rem;">
-    <img src="images/bild3.png" alt="Bild 2" style="width: 100%; height: auto;">
+
+  <!-- Schwarzer Balken mit Titel -->
+  <div class="container-fluid bg-dark text-white py-3 text-center">
+    <h1>Seitentitel</h1>
   </div>
-  <div style="flex: 1; padding: 0 0.5rem;">
-    <img src="images/bild4.png" alt="Bild 3" style="width: 100%; height: auto;">
+
+  <!-- Kontakt Button -->
+  <div class="container text-center my-3">
+    <a class="btn btn-outline-dark" href="mailto:kontakt.orwn@gmail.com">kontakt.orwn@gmail.com</a>
   </div>
-</section>
 
-<div style="text-align: center; margin: 1rem 0;">
-  <button style="padding: 0.5rem 1rem;">Galerie ansehen</button>
-</div>
+  <!-- Drei Bilder nebeneinander -->
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="images/bild2.png" class="img-fluid" alt="Bild 1">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/bild3.png" class="img-fluid" alt="Bild 2">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/bild4.png" class="img-fluid" alt="Bild 3">
+      </div>
+    </div>
+  </div>
 
+  <!-- Button Galerie -->
+  <div class="container text-center my-3">
+    <button class="btn btn-dark">Galerie ansehen</button>
+  </div>
 
+  <!-- Footer -->
+  <footer class="container mt-5 border-top pt-4">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4">
+        <a href="umut.html">Impressum</a><br><br>
+        <a href="holder.html">Datenschutz</a><br><br>
+        <a href="place.html">AGB</a><br><br>
+        <a href="placeholder.html">...</a>
+      </div>
+      <div class="col-md-4">
+        <a href="Kunst.html">Kunst</a><br><br>
+        <a href="Fassaden.html">Fassaden</a><br><br>
+        <a href="About.html">About</a><br><br>
+        <a href="Shop.html">Shop</a>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex justify-content-center justify-content-md-start gap-2 mt-2">
+          <a href="https://www.instagram.com/orwn/" target="_blank"><img src="images/instagram.png" alt="Instagram" width="24"></a>
+          <a href="https://www.linkedin.com/in/orwn/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" width="24"></a>
+          <a href="#" target="_blank"><img src="images/youtube.png" alt="YouTube" width="24"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
- <!------------------------------------------------------------------------------------------>
-    <footer>
-      <table>
-        <tr>
-          <td>
-            <a href="umut.html">Impressum</a> <br> <br>
-            <a href="holder.html">Datenschutz</a> <br> <br>
-            <a href="place.html">AGB</a> <br> <br>
-            <a href="placeholder.html">...</a> <br> <br>
-          </td>
-          <td>
-            <a href="Kunst.html">Kunst</a> <br> <br>
-            <a href="Fassaden.html">Fassaden</a> <br> <br>
-            <a href="About.html">About</a> <br> <br>
-            <a href="Shop.html">Shop</a> <br> <br>
-          </td>
-          <td>
-            <div class="social-media-icons">
-              <a href="https://www.instagram.com/orwn/" target="_blank"
-                ><img src="images/instagram.png" alt="Instagram"
-              /></a>
-              <a href="https://www.linkedin.com/in/orwn/" target="_blank"
-                ><img src="images/linkedin.png" alt="LinkedIn"
-              /></a>
-              <a href="coming soon lol" target="_blank"
-                ><img src="images/youtube.png" alt="Youtube"
-              /></a>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </footer>
+    <!-- Bootstrap JS (optional, für interaktive Komponenten) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
