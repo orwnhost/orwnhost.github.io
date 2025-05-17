@@ -778,7 +778,62 @@ margin-top: 0;
      
     }
 
+/* Fassade Text & Bild nebeneinander */
+.fassade-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+.fassade-text, .fassade-image {
+  flex: 1 1 300px;
+}
+
+.fassade-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Bild */
+.fassade-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media Queries für Mobilgeräte */
+@media (max-width: 768px) {
+  .fassade-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .fassade-text p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-button_f {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}
    
 
   }
