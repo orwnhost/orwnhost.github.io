@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe-Seite</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .section-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+      align-items: center;
+    }
+
+    .text-block {
+      flex: 1 1 300px;
+    }
+
+    .image-block {
+      flex: 1 1 300px;
+    }
+
+    .image-block img, .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .button {
+      display: block;
+      margin: 1rem auto;
+      padding: 0.7rem 1.5rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .gallery-item {
+      flex: 1 1 calc(33.333% - 1rem);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        flex: 1 1 100%;
+      }
+
+      .section-flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Seitentitel</h1>
+  </header>
+
+  <div class="container">
+
+    <section class="section-flex">
+      <div class="text-block">
+        <h2>Überschrift</h2>
+        <p>Ein paar Zeilen Text über das Thema. Hier kannst du deine Inhalte beschreiben.</p>
+        <p>Weitere Infos oder Stichpunkte folgen hier...</p>
+      </div>
+      <div class="image-block">
+        <img src="bild1.jpg" alt="Bildbeschreibung">
+      </div>
+    </section>
+
+    <button class="button">Mehr erfahren</button>
+
+    <section class="gallery">
+      <div class="gallery-item"><img src="bild2.jpg" alt="Galeriebild 1"></div>
+      <div class="gallery-item"><img src="bild3.jpg" alt="Galeriebild 2"></div>
+      <div class="gallery-item"><img src="bild4.jpg" alt="Galeriebild 3"></div>
+    </section>
+
+    <button class="button">Galerie ansehen</button>
+
+  </div>
+
+</body>
+</html>
